@@ -1,7 +1,9 @@
+// Labr.js Written by Taylor Wong
+
 module.exports = {
 
   // Dot multiply
-  vectorDotProduct: function (a, b) {
+  vectorDotProduct: (a, b) => {
     let result = 0;
     let shorter;
     let longer;
@@ -45,7 +47,7 @@ module.exports = {
   },
 
   // Cross multiply
-  vectorCrossProduct: function (a, b) {
+  vectorCrossProduct: (a, b) => {
     if (a.length === b.length && a.length === 3) {
       let valid = true;
       let resVector = [];
@@ -67,7 +69,7 @@ module.exports = {
   },
 
   // Transpose
-  transpose: function (matrix) {
+  transpose: (matrix) => {
     let temp = [[]];
     for (let i = 0; i < matrix.length; i++) {
       for (let j = 0; j < matrix[i].length; j++) {
@@ -81,7 +83,7 @@ module.exports = {
   },
 
   // Transformation
-  transform: function (vector, matrix) {
+  transform: (vector, matrix) => {
     let valid = true;
     let resVector = [];
     let transposedMatrix = transpose(matrix);
@@ -119,7 +121,7 @@ module.exports = {
   },
 
   // Find length
-  vectorLength: function (vector) {
+  vectorLength: (vector) => {
     let sum = 0;
     for (let i = 0; i < vector.length; i++) {
       if (typeof vector[i] == 'number') {
