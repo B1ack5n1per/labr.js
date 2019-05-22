@@ -1,4 +1,7 @@
-// Labr.js Written by Taylor Wong
+/*
+Labr.js Library Written by Taylor Wong
+Labr.js is a Node.js module adding linear algebra functions
+*/
 
 module.exports = {
 
